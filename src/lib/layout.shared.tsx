@@ -6,6 +6,8 @@ export function baseOptions(): BaseLayoutProps {
     nav: {
       // JSX supported
       title: appName,
+      transparentMode: 'top',
+      enabled: true
     },
     githubUrl: `https://github.com/${gitConfig.user}/${gitConfig.repo}`,
   };

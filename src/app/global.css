@@ -2,8 +2,17 @@
 @import 'fumadocs-ui/css/neutral.css';
 @import 'fumadocs-ui/css/preset.css';
 
+@theme {
+  --color-landing-foreground: oklch(0.145 0 0);
+  --color-landing-foreground-dark: oklch(0.985 0 0);
+}
+
 html {
   scrollbar-gutter: stable;
+}
+
+main {
+  @apply text-landing-foreground pt-4 pb-6 dark:text-landing-foreground-dark md:pb-12;
 }
 
 html > body[data-scroll-locked] {
