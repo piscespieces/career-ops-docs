@@ -43,6 +43,7 @@ export function Hero() {
           maxPixelCount={1920 * 1080}
         />
       )}
+
       {showShaders && (
         <Dithering
           width={720}
